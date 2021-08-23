@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  background-color: hsl(257, 40%, 49%);
+}
+.container {
+  height: 115vh;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px;
+  position: relative;
+}
+.brand-logo-div img {
+  max-width: 210px;
+  margin: 20px 0 40px;
+}
+.big-image {
+  width: 100%;
+  max-width: 350px;
+}
+.image-container {
+  width: 90%;
+  margin: auto;
+}
+.info {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+  color: white;
+}
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+.details {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+}
+.btn-register {
+  width: 180px;
+  font-size: 1rem;
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgb(60, 60, 60);
+  margin-top: 10px;
+}
+.btn-register:hover {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+.socials {
+  width: 130px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.socials i {
+  color: white;
+}
+@media screen and (min-width: 400px) {
+  .big-image {
+    width: 90%;
+    max-width: 680px;
+  }
+  .brand-logo-div img {
+    margin: 50px 0 70px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .container {
+    background-repeat: repeat-x;
+  }
+  .card-container {
+    width: 700px;
+    margin: auto;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+
+    width: 80%;
+    font-weight: 600;
+  }
+  .details {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    height: 100vh;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .container {
+    background-image: url("/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .card-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .info {
+    text-align: left;
+  }
+  .socials {
+    margin-left: 75%;
+  }
+}
